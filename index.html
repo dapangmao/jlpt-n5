@@ -17,6 +17,10 @@ body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.45 -apple-system,
 header{position:sticky;top:0;z-index:10;background:var(--bg);padding:calc(env(safe-area-inset-top) + 8px) 12px 8px;border-bottom:1px solid var(--line)}
 h1{font-size:18px;margin:0 0 8px;display:flex;justify-content:space-between;align-items:baseline}
 h1 small{font-size:13px;color:var(--mute);font-weight:400}
+.tabs{display:flex;gap:6px;margin:0 0 8px}
+.tabs a{flex:1;text-align:center;font-size:14px;padding:7px 0;border-radius:10px;background:var(--chip);color:var(--fg);text-decoration:none}
+.tabs a.cur{background:var(--acc);color:#fff}
+section{scroll-margin-top:180px}
 #q{width:100%;font-size:16px;padding:9px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--fg);-webkit-appearance:none}
 nav{display:flex;gap:6px;overflow-x:auto;padding:8px 0 0;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 nav::-webkit-scrollbar{display:none}
@@ -47,6 +51,7 @@ footer{text-align:center;color:var(--mute);font-size:12px;padding:24px 0 12px}
 <body>
 <header>
 <h1>JLPT N5 核心词汇表 <small>669 词</small></h1>
+<div class="tabs"><a class="cur" href="./">词汇表</a><a href="verbs.html">动词变形</a></div>
 <input id="q" type="search" placeholder="搜索 单词 / 读音 / 中文…" autocomplete="off" autocorrect="off" autocapitalize="off">
 <nav><a href="#s0">人物</a><a href="#s1">时间</a><a href="#s2">场所</a><a href="#s3">物品</a><a href="#s4">饮食</a><a href="#s5">身体·健康</a><a href="#s6">自然·天气</a><a href="#s7">学习·工作·生活</a><a href="#s8">数字·量词</a><a href="#s9">动词</a><a href="#s10">形容词（い）</a><a href="#s11">形容词（な）</a><a href="#s12">副词·接续</a><a href="#s13">疑问词·指示词</a><a href="#s14">寒暄语</a></nav>
 </header>
